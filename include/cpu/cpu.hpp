@@ -12,11 +12,5 @@ struct cpu
     std::uint8_t V[16];         // Chip-8 has 16 general purpose 8-bit registers, usually referred to as Vx
     std::uint16_t stack[16];
 
-    cpu::cpu(
-        std::uint16_t opcode,
-        std::uint16_t I,
-        std::uint8_t delay,
-        std::uint16_t pc,
-        std::uint8_t sound_timers,
-        std::uint8_t stack_pointer);
+    cpu::cpu();
 };
